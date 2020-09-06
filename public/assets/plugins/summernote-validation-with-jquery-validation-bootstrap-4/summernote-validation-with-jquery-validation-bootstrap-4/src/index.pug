@@ -1,0 +1,12 @@
+.container.pt-5
+  .row
+    .col-lg-8
+      form.form-validate-summernote
+          .form-group
+              label Name
+              input.form-control(name="form2-name",type='text', required, data-msg="Please enter your name")
+          .form-group
+              label Text
+              textarea.summernote(required, data-msg="Please write something :)")
+          .form-group        
+              button.btn.btn-primary(type='submit') Submit

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Summernote validation with jQuery validation + Bootstrap 4</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.10/summernote-bs4.css'>
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container pt-5">
+  <div class="row">
+    <div class="col-lg-8">
+      <form class="form-validate-summernote">
+        <div class="form-group">
+          <label>Name</label>
+          <input class="form-control" name="form2-name" type="text" required="required" data-msg="Please enter your name"/>
+        </div>
+        <div class="form-group">
+          <label>Text</label>
+          <textarea class="summernote" required="required" data-msg="Please write something :)"></textarea>
+        </div>
+        <div class="form-group">       
+          <button class="btn btn-primary" type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.1/umd/popper.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.10/summernote-bs4.js'>
+</script><script  src="./script.js"></script>
+
+</body>
+</html>
