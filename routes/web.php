@@ -28,7 +28,9 @@ Route::prefix('admin')->namespace('Admin')->group(function () {
    });
    Route::post('/logout','AdminController@logout')->name('admin.logout');
 
-   Route::get('/forgot/password','AdminController@logout');
+   Route::get('/forgot/password','AdminController@showForgotPassword')->name('admin.forgot.passowrd');
+   
+   Route::post('/reset_password_without_token','AdminController@validatePasswordRequest')->name('admin.validate.password');
 });
 
 
