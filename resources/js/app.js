@@ -2,11 +2,7 @@
 require('./bootstrap');
 
 window.Vue = require('vue');
-// Vue.config.productionTip = false;
-window.axios.defaults.baseURL ='https://lara-vue-6488e.firebaseio.com';
-window.axios.defaults.headers.common['Authorization'] ='Qayum hasan';
-window.axios.defaults.headers.get['Accepts'] ='application/json';
-
+Vue.config.productionTip = false;
 
 // support router
 import VueRouter from 'vue-router'

@@ -11,6 +11,7 @@ export default {
        
 
     },
+
     actions:{
         // allCategory(context){
         //     axios.get('/category')
@@ -20,6 +21,7 @@ export default {
         // },
         
     },
+    
     mutations:{
         // categoreis(state,data){
         //     return state.category = data
