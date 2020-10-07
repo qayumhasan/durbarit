@@ -43,6 +43,7 @@ class AdminController extends Controller
         ]);
            
             $fieldType = filter_var($request->username, FILTER_VALIDATE_EMAIL) ? 'email' : 'username';
+            
             if(Auth::guard('admin')->attempt(array($fieldType => $request['username'], 'password' => $request['password'])))
             {
                 return redirect()->intended(route('admin.home'));

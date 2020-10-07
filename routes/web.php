@@ -12,10 +12,13 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     // return view('welcome');
+//
+//     return view('admin.setting.profile');
+// });
 
+Route::get('/', 'FrontEnd\FrontEndController@index')->name('');
 Route::prefix('admin')->namespace('Admin')->group(function () {
    Route::get('/login','AdminController@showLoginPage')->name('admin.login.page');
    Route::post('/register','AdminController@register')->name('admin.register');
@@ -29,7 +32,7 @@ Route::prefix('admin')->namespace('Admin')->group(function () {
    Route::post('/logout','AdminController@logout')->name('admin.logout');
 
    Route::get('/forgot/password','AdminController@showForgotPassword')->name('admin.forgot.passowrd');
-   
+
    Route::post('/reset_password_without_token','AdminController@validatePasswordRequest')->name('admin.validate.password');
 });
 
